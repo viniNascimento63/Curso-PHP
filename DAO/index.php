@@ -28,6 +28,15 @@ echo json_encode($lista);
 */
 
 /* --- Carrega um usuário se login e senha corretos --- */
+/*
 $user = new Usuario();
 $user->login('sirigueijo', '1010');
 echo $user;
+*/
+
+/* --- INSERINDO novo usuário no banco --- */
+/*
+$user = new Usuario('Majin-Boo', '0980');
+$user->insert();
+echo $user;
+*/
