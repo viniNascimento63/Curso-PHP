@@ -121,4 +121,17 @@ class Usuario {
 
         $this->setData($results);
     }
+
+    // Altera dados de login e senha
+    public function update(string $login, string $pass) {
+        $this->set_desc_login($login);
+        $this->set_desc_senha($pass);
+
+        $sql = new Sql();
+        $sql->executeQuery('UPDATE tb_usuarios SET desc_login = :LOGIN, desc_senha = :PASS WHERE id_usuario = :ID', array(
+                ':LOGIN'=>$this->get_desc_login(),
+                ':PASS'=>$this->get_desc_senha(),
+                ':ID'=>$this->get_id_usuario()
+            ));
+    }
 }

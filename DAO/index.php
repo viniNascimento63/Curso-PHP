@@ -40,3 +40,9 @@ $user = new Usuario('Majin-Boo', '0980');
 $user->insert();
 echo $user;
 */
+
+/* --- ALTERANDO dados de login e senha --- */
+$user = new Usuario();
+$user->load_by_id(9);
+$user->update('Ben-10', '0101');
+echo $user;
