@@ -123,7 +123,7 @@ class Usuario {
     }
 
     // Altera dados de login e senha
-    public function update(string $login, string $pass) {
+    public function update(string $login, string $pass) : void {
         $this->set_desc_login($login);
         $this->set_desc_senha($pass);
 
@@ -133,5 +133,15 @@ class Usuario {
                 ':PASS'=>$this->get_desc_senha(),
                 ':ID'=>$this->get_id_usuario()
             ));
+    }
+
+    // Deleta usuário
+    public function delete(int $id) : void {
+        $this->set_id_usuario($id);
+        
+        $sql = new Sql();
+        $sql->executeQuery('DELETE FROM tb_usuarios WHERE id_usuario = :ID', array(
+            ':ID'=>$this->get_id_usuario()
+        ));
     }
 }
