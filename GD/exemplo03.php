@@ -20,11 +20,11 @@ imagettftext(
     $image,
     32,
     0,
-    365,
+    340,
     370,
     $titleColor,
     'fonts' . DIRECTORY_SEPARATOR . 'Playball' . DIRECTORY_SEPARATOR . 'Playball-Regular.ttf',
-    'Calabreso Alves'
+    'Calabreso da Silva'
 );
 
 imagestring(
