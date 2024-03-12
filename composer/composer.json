@@ -1,0 +1,15 @@
+{
+    "name": "vinicius-nascimento63/composer",
+    "description": "Aprendendo composer com PHP 7",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Vinícius Nascimento",
+            "email": "vini_sn@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog":"1.0.*"
+    }
+}
