@@ -11,7 +11,7 @@ curl_setopt($curl_handle, CURLOPT_SSL_VERIFYHOST, 0); // Ignora se o servidor LO
 curl_setopt($curl_handle, CURLOPT_SSL_VERIFYPEER, 0); // Ignora se o servidor REMOTO possui certificado SSL
 curl_setopt($curl_handle, CURLOPT_POSTFIELDS, http_build_query(array( // Essa configuração define os campos a serem enviados para a requisição.
     // chave compartilhada entre seu site e o reCAPTCHA.
-    'secret' => '6LedZ58pAAAAADDr9MXC0UJu2NpTGyrksX_5rgh7',
+    'secret' => '/*chave secreta do backend*/',
     // token de resposta do usuário fornecido pela integração reCAPTCHA do lado do cliente no seu site.
     'response' => $_POST['g-recaptcha-response'],
     // Endereço IP do usuário.
