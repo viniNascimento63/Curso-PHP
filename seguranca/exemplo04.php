@@ -8,7 +8,7 @@
 <body>
     <h1>Testando reCaptcha</h1>
     <form action="cadastro.php" method="POST">
-        <div class="g-recaptcha" data-sitekey="<!--chave do site-->"></div>
+        <div class="g-recaptcha" data-sitekey="<!-- aqui vai a chave do site-->"></div>
         <br />
         <input type="email" name="inputEmail">
         <button type="submit">Enviar</button>
